@@ -97,32 +97,6 @@
         "NO_PANELS_MSG": "Ce tableau n'a pas de panneaux configurés. Ajoutez-y des panneaux."
       }
     },
-    "BOOKMARK": {
-      "BAR": {
-        "ADD": "Ajouter un marque-page",
-        "DROP": "Déposer ici pour ajouter aux favoris",
-        "EDIT": "Modifier les favoris",
-        "NO_BOOKMARKS": "Vous n'avez aucun projet favoris. Ajoutez-en un via glisser-déposer ou en cliquant sur le bouton 'plus'."
-      },
-      "DIALOG_EDIT": {
-        "ADD_BOOKMARK": "Ajouter aux favoris",
-        "EDIT_BOOKMARK": "Modifier le favori",
-        "LABELS": {
-          "COMMAND": "Commande",
-          "FILE": "Chemin du fichier",
-          "IMG": "Image",
-          "LINK": "URL"
-        },
-        "SELECT_ICON": "Sélectionner une icône",
-        "SELECT_TYPE": "Sélectionner un type",
-        "TYPES": {
-          "COMMAND": "Commande (commande shell personnalisée)",
-          "FILE": "Fichier (ouvert par l'application système par défaut)",
-          "IMG": "Image (affichée en miniature)",
-          "LINK": "Lien (ouvert dans le navigateur)"
-        }
-      }
-    },
     "CALDAV": {
       "DIALOG_INITIAL": {
         "TITLE": "Configurer CalDav pour le projet"
@@ -157,12 +131,12 @@
         "ADD_AS_TASK": "Ajouter une Tâche",
         "FOCUS_TASK": "Tâche de concentration",
         "TXT": "<strong>{{title}}</strong> commence à <strong>{{start}}</strong> !",
-        "TXT_MULTIPLE": "<strong>{{title}}</strong> commence à <strong>{{start}}</strong> !<br> (et {{nrOfOtherBanners} } autres événements sont prévus)",
+        "TXT_MULTIPLE": "<strong>{{title}}</strong> commence à <strong>{{start}}</strong> !<br> (et {{nrOfOtherBanners}} autres événements sont prévus)",
         "TXT_PAST": "<strong>{{title}}</strong> a commencé à <strong>{{start}}</strong> !",
-        "TXT_PAST_MULTIPLE": "<strong>{{title}}</strong> a commencé à <strong>{{start}}</strong> !<br> (et {{nrOfOtherBanners} } autres événements sont prévus)"
+        "TXT_PAST_MULTIPLE": "<strong>{{title}}</strong> a commencé à <strong>{{start}}</strong> !<br> (et {{nrOfOtherBanners}} autres événements sont prévus)"
       },
       "S": {
-        "CAL_PROVIDER_ERROR": "Erreur du fournisseur de calendrier : {{errTxt} }"
+        "CAL_PROVIDER_ERROR": "Erreur du fournisseur de calendrier : {{errTxt}}"
       }
     },
     "CONFIG": {
@@ -201,7 +175,6 @@
         "TO_FOCUS_OVERLAY": "Pour superposition de concentration"
       },
       "BACK_TO_PLANNING": "Retour à la planification",
-      "CANCEL_FOCUS_SESSION": "Annuler la session de concentration",
       "CONGRATS": "Félicitations pour avoir terminé cette session !",
       "CONTINUE_FOCUS_SESSION": "Continuer la session de concentration",
       "COUNTDOWN": "Compte à rebours",
@@ -306,7 +279,7 @@
         "T_TITLE": "Titre",
         "T_TO_BE_SUBMITTED": "A soumettre",
         "TITLE": "Soumettre sur GitLab le temps passé sur les tickets",
-        "TOTAL_MSG": "Vous allez soumettre <em>{{totalTimeToSubmit} }</em> comme temps de travail total d'aujourd'hui, passé sur <em>{{nrOfTasksToSubmit} }</em> tickets différents."
+        "TOTAL_MSG": "Vous allez soumettre <em>{{totalTimeToSubmit}}</em> comme temps de travail total d'aujourd'hui, passé sur <em>{{nrOfTasksToSubmit}}</em> tickets différents."
       },
       "FORM": {
         "FILTER": "Filtre personnalisé",
@@ -637,8 +610,8 @@
       "S": {
         "ERR_UNKNOWN": "OpenProject : erreur inconnue {{statusCode}} {{errorMsg}}. CORS est-il correctement configuré pour le serveur ?",
         "POST_TIME_SUCCESS": "OpenProject : entrée de temps créée avec succès pour {{issueTitle}}",
-        "TRANSITION": "OpenProject : définir le ticket \"{{issueKey} }\" sur \"{{name} }\"",
-        "TRANSITION_SUCCESS": "OpenProject : définir le ticket {{issueKey} } sur <strong>{{chosenTransition} }</strong>",
+        "TRANSITION": "OpenProject : définir le ticket \"{{issueKey}}\" sur \"{{name}}\"",
+        "TRANSITION_SUCCESS": "OpenProject : définir le ticket {{issueKey}} sur <strong>{{chosenTransition}}</strong>",
         "TRANSITIONS_LOADED": "Transitions chargées. Utilisez les sélections ci-dessous pour les attribuer"
       }
     },
@@ -646,6 +619,7 @@
       "D": {
         "ADD_PLANNED": {
           "ADD_TO_TODAY": "Ajouter à Aujourd'hui",
+          "RE_PLAN_ALL": "Tout reprogrammer",
           "TITLE": "Ajouter les tâches planifiées à Aujourd'hui"
         },
         "PLAN_FOR_DAY": {
@@ -660,7 +634,7 @@
         "NO_SCHEDULED_ITEMS": "Aucun élément programmé"
       },
       "S": {
-        "REMOVED_PLAN_DATE": "Date de planification supprimée pour la tâche \"{{taskTitle} }\"",
+        "REMOVED_PLAN_DATE": "Date de planification supprimée pour la tâche \"{{taskTitle}}\"",
         "TASK_ALREADY_PLANNED": "La tâche est déjà plannifiée le {{date}",
         "TASK_PLANNED_FOR": "Tâche planifiée pour {date}"
       },
@@ -810,7 +784,7 @@
         "STATUS": "Statut"
       },
       "S": {
-        "ERR_UNKNOWN": "Redmine : erreur inconnue {{statusCode} } {{errorMsg} }."
+        "ERR_UNKNOWN": "Redmine : erreur inconnue {{statusCode}} {{errorMsg}}."
       }
     },
     "REMINDER": {
@@ -818,7 +792,7 @@
         "HIDE": "Réduire",
         "START_NOW": "Commencer maintenant",
         "TXT": "<strong>{{title}}</strong> commence à <strong>{{start}}</strong> !",
-        "TXT_MULTIPLE": "<strong>{{title}}</strong> commence à <strong>{{start}}</strong> !<br> (et {{nrOfOtherBanners} } autres tâches sont dues)"
+        "TXT_MULTIPLE": "<strong>{{title}}</strong> commence à <strong>{{start}}</strong> !<br> (et {{nrOfOtherBanners}} autres tâches sont dues)"
       },
       "S_ACTIVE_TASK_DUE": "La tâche sur laquelle vous travaillez actuellement est arrivée à échéance !<br/> ({{title}})",
       "S_REMINDER_ERR": "Erreur pour l'interface de rappel"
@@ -995,6 +969,9 @@
       },
       "S": {
         "UPDATED": "Les paramètres des balises ont été mis à jour"
+      },
+      "TTL": {
+        "ADD_NEW_TAG": "Ajouter une nouvelle balise"
       }
     },
     "TASK": {
@@ -1059,6 +1036,7 @@
         "TOGGLE_DETAIL_PANEL": "Afficher / masquer les informations supplémentaires",
         "TOGGLE_DONE": "Marquer comme fait / annulé",
         "TOGGLE_SUB_TASK_VISIBILITY": "Basculer la visibilité de la sous-tâche",
+        "TOGGLE_TAGS": "Basculer les balises",
         "TRACK_TIME": "Commencer le suivi du temps",
         "TRACK_TIME_STOP": "Mettre en pause le suivi du temps",
         "UPDATE_ISSUE_DATA": "Mettre à jour les données du ticket"
@@ -1157,15 +1135,15 @@
         "CUSTOM": "Configuration de répétition customisée",
         "CUSTOM_AND_TIME": "Customisé, {timeStr}",
         "CUSTOM_WEEKLY": "{daysStr}",
-        "CUSTOM_WEEKLY_AND_TIME": "{{daysStr} }, {{timeStr} }",
+        "CUSTOM_WEEKLY_AND_TIME": "{{daysStr}}, {{timeStr}}",
         "DAILY": "Chaque jour",
-        "DAILY_AND_TIME": "Chaque jour, {{timeStr} }",
-        "EVERY_X_DAILY": "Tous les {{x} } jours",
-        "EVERY_X_DAILY_AND_TIME": "Tous les {{x} } jours, {{timeStr} }",
-        "EVERY_X_MONTHLY": "Tous les {{x} } mois",
-        "EVERY_X_MONTHLY_AND_TIME": "Tous les {{x} } mois, {{timeStr} }",
-        "EVERY_X_YEARLY": "Tous les {{x} } ans",
-        "EVERY_X_YEARLY_AND_TIME": "Tous les {{x} } ans, {{timeStr} }",
+        "DAILY_AND_TIME": "Chaque jour, {{timeStr}}",
+        "EVERY_X_DAILY": "Tous les {{x}} jours",
+        "EVERY_X_DAILY_AND_TIME": "Tous les {{x}} jours, {{timeStr}}",
+        "EVERY_X_MONTHLY": "Tous les {{x}} mois",
+        "EVERY_X_MONTHLY_AND_TIME": "Tous les {{x}} mois, {{timeStr}}",
+        "EVERY_X_YEARLY": "Tous les {{x}} ans",
+        "EVERY_X_YEARLY_AND_TIME": "Tous les {{x}} ans, {{timeStr}}",
         "MONDAY_TO_FRIDAY": "Lun-Ven",
         "MONDAY_TO_FRIDAY_AND_TIME": "Lun-Ven, {timeStr}",
         "MONTHLY_CURRENT_DATE": "Le {{dateDayStr}} de chaque mois",
@@ -1176,7 +1154,7 @@
         "YEARLY_CURRENT_DATE_AND_TIME": "Chaque année le {dayAndMonthStr}, {timeStr}"
       },
       "D_CONFIRM_MOVE_TO_PROJECT": {
-        "MSG": "Il y a {{tasksNr}} instances créées pour cette tâche répétée. Voulez-vous toutes les déplacer vers le projet « {{projectName} } » ?",
+        "MSG": "Il y a {{tasksNr}} instances créées pour cette tâche répétée. Voulez-vous toutes les déplacer vers le projet « {{projectName}} » ?",
         "OK": "Mettre à jour toutes les instances"
       },
       "D_CONFIRM_REMOVE": {
@@ -1260,6 +1238,7 @@
       "D_TRACKING_REMINDER": {
         "CREATE_AND_TRACK": "<em>Créer</em> et suivre vers",
         "IDLE_FOR": "Vous avez été inactif pour:",
+        "NOTIFICATION_TITLE": "Suivez votre temps !",
         "TASK": "Tâche",
         "TRACK_TO": "Suivre à:",
         "UNTRACKED_TIME": "Temps non suivi:"
@@ -1546,6 +1525,7 @@
       "DONE_SOUND": "Son pour tâche terminée",
       "IS_INCREASE_DONE_PITCH": "Augmentez la hauteur pour chaque tâche effectuée",
       "TITLE": "Du son",
+      "TRACK_TIME_SOUND": "Son de rappel de temps de piste",
       "VOLUME": "Le volume"
     },
     "TAKE_A_BREAK": {
@@ -1570,6 +1550,8 @@
       "L_IS_AUTO_START_NEXT_TASK": "Démarrer le suivi de la prochaine tâche quand la tâche courante est marquée comme terminée",
       "L_IS_NOTIFY_WHEN_TIME_ESTIMATE_EXCEEDED": "Notifier lorsque le temps estimé a été dépassé",
       "L_IS_TRACKING_REMINDER_ENABLED": "Rappel de suivi activé",
+      "L_IS_TRACKING_REMINDER_FOCUS_WINDOW": "Fenêtre de l’application Focus lorsque le rappel est actif (ordinateur uniquement)",
+      "L_IS_TRACKING_REMINDER_NOTIFY": "Avertir lorsque le rappel de suivi du temps s’affiche",
       "L_IS_TRACKING_REMINDER_SHOW_ON_MOBILE": "Afficher le rappel de suivi sur l'application mobile",
       "L_TRACKING_INTERVAL": "Intervalle de suivi du temps (EXPÉRIMENTAL)",
       "L_TRACKING_REMINDER_MIN_TIME": "Temps d'attente avant d'afficher la bannière de rappel de suivi",

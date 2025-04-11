@@ -1,3 +1,24 @@
+## [12.0.3](https://github.com/johannesjo/super-productivity/compare/v12.0.2...v12.0.3) (2025-04-05)
+
+### Bug Fixes
+
+- **android:** status bar for android sdk 35 [#4205](https://github.com/johannesjo/super-productivity/issues/4205) ([0d853f2](https://github.com/johannesjo/super-productivity/commit/0d853f21e6822e3ed1326da9b095abd0e744f3d1))
+
+## [12.0.2](https://github.com/johannesjo/super-productivity/compare/v12.0.1...v12.0.2) (2025-04-03)
+
+### Bug Fixes
+
+- invalid translation variables [#4179](https://github.com/johannesjo/super-productivity/issues/4179) {{}} ([b7fb14f](https://github.com/johannesjo/super-productivity/commit/b7fb14f089bcbfac3550f9ea687904b1fe7498f1))
+- LocalBackupService not instantiating [#4137](https://github.com/johannesjo/super-productivity/issues/4137) ([e57a080](https://github.com/johannesjo/super-productivity/commit/e57a080b86d2acf8f44cb2a5c25c5cbf8386318e))
+- t.at is not a function [#4162](https://github.com/johannesjo/super-productivity/issues/4162) ([3538d74](https://github.com/johannesjo/super-productivity/commit/3538d748bf156e8c04d85092066c8587bf993c4c))
+- unable to select subtasks anymore ([9a2bab0](https://github.com/johannesjo/super-productivity/commit/9a2bab091f99ab8aba8a565a3533b0c68dc21d3d))
+
+### Features
+
+- add track time sound configuration and notifications ([74827cc](https://github.com/johannesjo/super-productivity/commit/74827cc2758cdbbe630faafc4d5fe9a3c7373199))
+- hide remove from today button for today list [#4101](https://github.com/johannesjo/super-productivity/issues/4101) ([f7cf56f](https://github.com/johannesjo/super-productivity/commit/f7cf56f47b1900df69e9dfc2eb9e81f2552a1e51))
+- update translations ([fd884ce](https://github.com/johannesjo/super-productivity/commit/fd884cee7cbf0522f28e312c6a84bb57a81b850a))
+
 ## [12.0.1](https://github.com/johannesjo/super-productivity/compare/v11.1.3...v12.0.1) (2025-03-14)
 
 ### Bug Fixes

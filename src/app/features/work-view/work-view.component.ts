@@ -3,6 +3,7 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
+  effect,
   ElementRef,
   inject,
   input,
@@ -52,6 +53,7 @@ import { BacklogComponent } from './backlog/backlog.component';
 import { AsyncPipe } from '@angular/common';
 import { MsToStringPipe } from '../../ui/duration/ms-to-string.pipe';
 import { TranslatePipe } from '@ngx-translate/core';
+import { flattenTasks } from '../tasks/store/task.selectors';
 
 @Component({
   selector: 'work-view',
@@ -108,6 +110,7 @@ export class WorkViewComponent implements OnInit, OnDestroy, AfterContentInit {
   todayRemainingInProject = toSignal(this.workContextService.todayRemainingInProject$);
   estimateRemainingToday = toSignal(this.workContextService.estimateRemainingToday$);
   workingToday = toSignal(this.workContextService.workingToday$);
+  selectedTaskId = toSignal(this.taskService.selectedTaskId$);
 
   isShowTimeWorkedWithoutBreak: boolean = true;
   splitInputPos: number = 100;
@@ -144,6 +147,23 @@ export class WorkViewComponent implements OnInit, OnDestroy, AfterContentInit {
     if (ref) {
       this.splitTopEl$.next(ref.nativeElement);
     }
+  }
+
+  constructor() {
+    // Setup effect to track task changes
+    effect(() => {
+      const currentSelectedId = this.selectedTaskId();
+      if (!currentSelectedId) return;
+
+      const undoneArr = flattenTasks(this.undoneTasks());
+      if (undoneArr.some((t) => t.id === currentSelectedId)) return;
+
+      const doneArr = flattenTasks(this.doneTasks());
+      if (doneArr.some((t) => t.id === currentSelectedId)) return;
+
+      // if task really is gone
+      this.taskService.setSelectedId(null);
+    });
   }
 
   ngOnInit(): void {
